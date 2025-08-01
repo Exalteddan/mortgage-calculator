@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mortgage calculator</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./assets/font-awesome/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/font-awesome/webfonts/fa-brands-400.woff2"
+    />
+  </head>
+  <body class="h-screen w-screen overflow-hidden">
+    <div class="grid grid-cols-2 border-4 h-full">
+      <div class="left-container">
+        <header class="flex flex-row items-center justify-between h-20 px-14">
+          <h1 class="text-4xl text-sky-900 font-bold">Mortgage Calculator</h1>
+          <p
+            class="text-lg text-sky-800 underline underline-offset-1 cursor-pointer"
+          >
+            Clear all
+          </p>
+        </header>
+
+        <section class="amount flex flex-col gap-4 mx-14 mt-14">
+          <label for="Mortgage Amount" class="text-2xl text-sky-700"
+            >Mortgage Amount</label
+          >
+          <div
+            class="flex flex-row items-center gap-2 border-2 border-sky-300 rounded-lg w-[70%] h-14"
+          >
+            <div
+              class="flex items-center justify-center w-12 h-full bg-sky-300"
+            >
+              <i class="fa-solid fa-sterling-sign text-sky-700"></i>
+            </div>
+
+            <input type="" class="border-0 outline-0 w-[80%]" />
+          </div>
+        </section>
+        <div class="flex">
+          <section class="term mx-14 mt-10">
+            <div class="contents">
+              <label for="" class="text-sky-800 text-[15px]"
+                >Mortgage Term</label
+              >
+              <div
+                class="border-2 w-fit mt-3 border-sky-400 rounded-md flex flex-row gap-[30px]"
+              >
+                <input type="text" class="w-[130px] p-3 border-0 outline-0" />
+                <p
+                  class="year text-sky-800 bg-sky-300 flex justify-center font-bold font-sans items-center p-3"
+                >
+                  years
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="interest mt-10">
+            <div class="contents">
+              <label for="" class="text-sky-800 text-[15px]">Interests</label>
+              <div
+                class="border-2 w-fit mt-3 border-sky-400 rounded-md flex flex-row gap-[30px]"
+              >
+                <input type="text" class="w-[130px] p-3 border-0 outline-0" />
+                <div
+                  class="flex items-center justify-center w-12 h-full p-4 bg-sky-300"
+                >
+                  <i class="fa-solid fa-percentage text-sky-700"></i>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <section>
+          <div class="type mt-5 mx-13">
+            <label for="" class="text-sky-800 text-lg">Mortgage Type</label>
+            <div class="inputs">
+              <div
+                class="repayment flex items center gap-4 border-2 border-sky-900 p-4 w-110 mb-4 rounded-md mt-3.5 cursor-pointer hover:bg-lime-200"
+              >
+                <input type="radio" name="excellence" class="cursor-pointer" />
+                <p class="font-bold font-sans text-sky-950">Repayment</p>
+              </div>
+              <div
+                class="interest-only flex items center gap-4 border-2 border-sky-900 w-110 p-4 rounded-md cursor-pointer hover:bg-lime-200"
+              >
+                <input type="radio" name="excellence" class="cursor-pointer" />
+                <p class="font-bold font-sans text-sky-950">Interest Only</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section4
+          class="flex flex-row gap-3 items-center justify-center mt-20 bg-lime-500 w-[40%] h-15 mx-auto rounded-full cursor-pointer font-bold text-sky-950 hover:bg-transparent hover:border-2"
+        >
+          <img src="./assets/font-awesome/icons8-calculator-24.png" alt="" />
+          <button class="cursor-pointer">Calculate Repayments</button>
+        </section4>
+      </div>
+
+      <div class="right-container bg-sky-950 rounded-bl-[15%]">
+        <section class="flex flex-col items-center justify-center h-full">
+          <img
+            src="./mortgage-repayment-calculator-main/assets/images/illustration-empty.svg"
+            alt=""
+          />
+          <h1 class="text-white text-[20px]">Results shown here</h1>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
