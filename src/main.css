@@ -20,6 +20,11 @@
     --color-sky-950: oklch(29.3% 0.066 243.157);
     --color-white: #fff;
     --spacing: 0.25rem;
+    --container-xs: 20rem;
+    --container-lg: 32rem;
+    --container-xl: 36rem;
+    --container-2xl: 42rem;
+    --container-6xl: 72rem;
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
     --text-xl: 1.25rem;
@@ -252,17 +257,77 @@
   .h-screen {
     height: 100vh;
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
+  .w-2xl {
+    width: var(--container-2xl);
+  }
+  .w-4 {
+    width: calc(var(--spacing) * 4);
+  }
   .w-5 {
     width: calc(var(--spacing) * 5);
   }
   .w-5\/6 {
     width: calc(5/6 * 100%);
   }
+  .w-6xl {
+    width: var(--container-6xl);
+  }
+  .w-7 {
+    width: calc(var(--spacing) * 7);
+  }
+  .w-10 {
+    width: calc(var(--spacing) * 10);
+  }
   .w-12 {
     width: calc(var(--spacing) * 12);
   }
+  .w-14 {
+    width: calc(var(--spacing) * 14);
+  }
+  .w-15 {
+    width: calc(var(--spacing) * 15);
+  }
+  .w-109 {
+    width: calc(var(--spacing) * 109);
+  }
   .w-\[\%\] {
     width: %;
+  }
+  .w-\[0px\] {
+    width: 0px;
+  }
+  .w-\[3rem\] {
+    width: 3rem;
+  }
+  .w-\[5\] {
+    width: 5;
+  }
+  .w-\[6\] {
+    width: 6;
+  }
+  .w-\[10rem\] {
+    width: 10rem;
+  }
+  .w-\[20px\] {
+    width: 20px;
+  }
+  .w-\[20rem\] {
+    width: 20rem;
+  }
+  .w-\[24rem\] {
+    width: 24rem;
+  }
+  .w-\[29rem\] {
+    width: 29rem;
+  }
+  .w-\[32rem\] {
+    width: 32rem;
+  }
+  .w-\[35rem\] {
+    width: 35rem;
   }
   .w-\[40\%\] {
     width: 40%;
@@ -273,14 +338,74 @@
   .w-\[50\] {
     width: 50;
   }
+  .w-\[50rem\] {
+    width: 50rem;
+  }
+  .w-\[60px\] {
+    width: 60px;
+  }
   .w-\[70\%\] {
     width: 70%;
+  }
+  .w-\[70\] {
+    width: 70;
+  }
+  .w-\[70rem\] {
+    width: 70rem;
   }
   .w-\[79\%\] {
     width: 79%;
   }
+  .w-\[90px\] {
+    width: 90px;
+  }
+  .w-\[100\%\] {
+    width: 100%;
+  }
+  .w-\[100\] {
+    width: 100;
+  }
+  .w-\[170px\] {
+    width: 170px;
+  }
+  .w-\[170rem\] {
+    width: 170rem;
+  }
+  .w-\[200px\] {
+    width: 200px;
+  }
+  .w-\[1005\] {
+    width: 1005;
+  }
+  .w-auto {
+    width: auto;
+  }
+  .w-full {
+    width: 100%;
+  }
+  .w-lg {
+    width: var(--container-lg);
+  }
   .w-screen {
     width: 100vw;
+  }
+  .w-xl {
+    width: var(--container-xl);
+  }
+  .w-xs {
+    width: var(--container-xs);
+  }
+  .max-w-2xl {
+    max-width: var(--container-2xl);
+  }
+  .max-w-\[70px\] {
+    max-width: 70px;
+  }
+  .max-w-\[170px\] {
+    max-width: 170px;
+  }
+  .max-w-full {
+    max-width: 100%;
   }
   .flex-shrink {
     flex-shrink: 1;
@@ -345,11 +470,32 @@
   .gap-4 {
     gap: calc(var(--spacing) * 4);
   }
+  .space-y-2 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 2) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-4 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
   .space-y-6 {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 0;
       margin-block-start: calc(calc(var(--spacing) * 6) * var(--tw-space-y-reverse));
       margin-block-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-8 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 8) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 8) * calc(1 - var(--tw-space-y-reverse)));
     }
   }
   .space-y-10 {
@@ -417,6 +563,15 @@
   }
   .p-4 {
     padding: calc(var(--spacing) * 4);
+  }
+  .p-6 {
+    padding: calc(var(--spacing) * 6);
+  }
+  .p-10 {
+    padding: calc(var(--spacing) * 10);
+  }
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
   }
   .px-14 {
     padding-inline: calc(var(--spacing) * 14);
